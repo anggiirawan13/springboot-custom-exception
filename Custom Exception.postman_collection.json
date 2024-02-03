@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "7302e762-099e-4fb5-9705-dfd71262c602",
+		"name": "Custom Exception",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15052966"
+	},
+	"item": [
+		{
+			"name": "Test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/test",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Index Out Of Bounds",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/aioob",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"aioob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Null Pointer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/np",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"np"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
