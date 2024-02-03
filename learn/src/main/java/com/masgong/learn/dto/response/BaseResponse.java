@@ -6,6 +6,15 @@ public class BaseResponse {
     private String message;
     private Object data;
 
+    public BaseResponse() {
+
+    }
+
+    public BaseResponse(int statusCode, String message) {
+        this.statusCode = statusCode;
+        this.message = message;
+    }
+
     public BaseResponse(int statusCode, String message, Object data) {
         this.statusCode = statusCode;
         this.message = message;
