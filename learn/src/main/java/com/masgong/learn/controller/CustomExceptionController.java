@@ -17,4 +17,9 @@ public class CustomExceptionController {
     public BaseResponse arrayIndexOutOfBounds() {
         return customExceptionService.arrayIndexOutOfBounds();
     }
+
+    @GetMapping("/np")
+    public BaseResponse nullPointer() {
+        return customExceptionService.nullPointer();
+    }
 }
