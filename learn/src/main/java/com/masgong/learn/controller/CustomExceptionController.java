@@ -5,17 +5,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.masgong.learn.dto.response.BaseResponse;
-import com.masgong.learn.service.TestService;
+import com.masgong.learn.service.CustomExceptionService;
 
 @RestController
-public class TestController {
-    
+public class CustomExceptionController {
+ 
     @Autowired
-    private TestService testService;
+    private CustomExceptionService customExceptionService;
 
-    @GetMapping("/test")
-    public BaseResponse test() {
-        return testService.test();
+    @GetMapping("/aioob")
+    public BaseResponse arrayIndexOutOfBounds() {
+        return customExceptionService.arrayIndexOutOfBounds();
     }
-
 }

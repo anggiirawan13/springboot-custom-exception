@@ -5,6 +5,7 @@ public class BaseResponse {
     private int statusCode;
     private String message;
     private Object data;
+    private Object additionalEntity;
 
     public BaseResponse() {
 
@@ -19,6 +20,13 @@ public class BaseResponse {
         this.statusCode = statusCode;
         this.message = message;
         this.data = data;
+    }
+
+    public BaseResponse(int statusCode, String message, Object data, Object additionalEntity) {
+        this.statusCode = statusCode;
+        this.message = message;
+        this.data = data;
+        this.additionalEntity = additionalEntity;
     }
 
     public int getStatusCode() {
@@ -43,6 +51,14 @@ public class BaseResponse {
 
     public void setData(Object data) {
         this.data = data;
+    }
+
+    public Object getAdditionalEntity() {
+        return additionalEntity;
+    }
+
+    public void setAdditionalEntity(Object additionalEntity) {
+        this.additionalEntity = additionalEntity;
     }
 
 }
